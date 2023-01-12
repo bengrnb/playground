@@ -70,8 +70,7 @@ button {
 }
 .parallax {
   /* The image used */
-  background-image: url("/images/home/bg-grid.svg");
-  background-image: url("/images/home/bg-grid.svg");
+  background-image: url("../images/home/bg-grid.svg");
 
   /* Set a specific height */
   min-height: 500px;
