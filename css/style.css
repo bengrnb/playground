@@ -99,6 +99,16 @@ h3 {font-size:1.125rem;/*18px*/line-height:1.75rem;/*28px*/}
 .br-8 {border-radius: 8px;}
 .br-9 {border-radius: 9px;}
 .br-10 {border-radius: 10px;}
+.br-11 {border-radius: 11px;}
+.br-12 {border-radius: 12px;}
+.br-13 {border-radius: 13px;}
+.br-14 {border-radius: 14px;}
+.br-15 {border-radius: 15px;}
+.br-16 {border-radius: 16px;}
+.br-17 {border-radius: 17px;}
+.br-18 {border-radius: 18px;}
+.br-19 {border-radius: 19px;}
+.br-20 {border-radius: 20px;}
 
 
 
@@ -164,6 +174,15 @@ img.headhshot-small-screen {
 .smscreen-respons {
     align-items: center;
 }
+/* ------------------------------ */
+/* Case Studies */
+.case-study-container-item {
+    width: 50%;
+}
+.case-study-text-container {
+    width: 50%;
+}
+
 
 
 /* Media Queries */
@@ -194,6 +213,9 @@ img.headhshot-small-screen {
     .infobox {
         width: 100%;
     }
+    .case-study-container {
+        flex-direction: column;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .headhshot-small-screen {
@@ -220,6 +242,12 @@ img.headhshot-small-screen {
     }
     .about-whole-container {
         padding: 20px;
+    }
+    .case-study-image-container {
+        display: none;
+    }
+    .case-study-text-container {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 420px) {
