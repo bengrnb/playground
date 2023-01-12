@@ -1,0 +1,127 @@
+/* ---------------------Colors--------------------- */
+/* Slate Colors */
+.slate-5 {color:#f8fafc }
+.slate-10 {color:#f1f5f9 }
+.slate-20 {color:#e2e8f0 }
+.slate-30 {color:#cbd5e1 }
+.slate-40 {color:#94a3b8}
+.slate-50 {color:#64748b }
+.slate-60 {color:#475569 }
+.slate-70 {color:#334155 }
+.slate-80 {color:#1e293b }
+.slate-90 {color:#0f172a}
+
+/* ---------------------Typeface--------------------- */
+/* Size and Spacing */
+* {font-family: 'Inter', sans-serif;}
+.text-xs {font-size:0.75rem;/*12px*/line-height:1rem;/*16px*/}
+.text-sm	{font-size:0.875rem;/*14px*/line-height:1.25rem;/*20px*/}
+.text-base {font-size:1rem;/*16px*/line-height:1.5rem;/*24px*/}
+.text-lg {font-size:1.125rem;/*18px*/line-height:1.75rem;/*28px*/}
+.text-xl	{font-size:1.25rem;/*20px*/line-height:1.75rem;/*28px*/}
+.text-2xl {font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/}
+.text-3xl {font-size:1.875rem;/*30px*/line-height:2.25rem;/*36px*/}
+.text-4xl {font-size:2.25rem;/*36px*/line-height:2.5rem;/*40px*/}
+.text-5xl {font-size:3rem;/*48px*/line-height:1;}
+.text-6xl {font-size:3.75rem;/*60px*/line-height:1;}
+.text-7xl {font-size:4.5rem;/*72px*/line-height:1;}
+.text-8xl {font-size:6rem;/*96px*/line-height:1;}
+.text-9xl {font-size:8rem;/*128px*/line-height:1;}
+/* Size and Spacing */
+.thin{font-weight: 00;}
+.extra-light{font-weight:200;}
+.light{font-weight:300;}
+.normal{font-weight:400;}
+.medium{font-weight:500;}
+.semi-bold{font-weight:600;}
+.bold{font-weight: 700;}
+.extra-bold{font-weight: 800;}
+.black{font-weight: 900;}
+
+/* Flex */
+.flex {display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+.flex-column {flex-direction: column;}
+.flex-row {flex-direction:row;}
+.flex-left {width: 100%; flex-basis: 100%}
+.justify-content-center{ justify-content: center;}
+.justify-content-between{ justify-content: space-between;}
+.justify-content-around{ justify-content: space-around;}
+.align-items-center{ align-items: center;}
+
+p {font-size:1rem;/*16px*/line-height:1.5rem;/*24px*/font-weight:400;}
+h1 {font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/}
+h2 {font-size:1.25rem;/*20px*/line-height:1.75rem;/*28px*/}
+h3 {font-size:1.125rem;/*18px*/line-height:1.75rem;/*28px*/}
+/* ------------------------------------- */
+
+
+
+body {
+    /* Slate-10 */
+    background-color: #f1f5f9;
+    /* background-image: url("/images/home/bg-grid.svg"); */
+}
+button {
+    height: 64px;
+    border-radius: 6px;
+    border: none;
+    width: 220px;
+}
+.parallax {
+  /* The image used */
+  background-image: url("/images/home/bg-grid.svg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fold {
+    flex-direction: row;
+    padding: 50px;
+}
+
+.home-buttons {
+    column-gap: 4rem;
+    display: flex;
+}
+.button-text {
+    font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/
+    font-weight:500;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .home-buttons {
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    button {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .fold {
+        flex-direction: column;
+        row-gap: 5rem;
+        padding: 20px;
+    }
+    button {
+        width: 300px;
+    }
+    .home-buttons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 1rem;
+    }
+    .button-text {
+        font-size:1.25rem;/*20px*/line-height:1.75rem;/*28px*/
+    }
+}
