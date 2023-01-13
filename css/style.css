@@ -182,7 +182,9 @@ img.headhshot-small-screen {
 .case-study-text-container {
     width: 50%;
 }
-
+.case-study-item {
+    width: 50%;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
@@ -190,7 +192,10 @@ img.headhshot-small-screen {
         flex-direction: column;
     }
     .case-study-item {
-        max-height: 400px;
+        max-height: 450px;
+    }
+    .case-study-item {
+        width: 100%;
     }
  }
 @media only screen and (max-width: 1200px) {
