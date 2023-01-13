@@ -190,7 +190,7 @@ img.headhshot-small-screen {
         flex-direction: column;
     }
     .case-study-item {
-        max-height: 460px;
+        max-height: 400px;
     }
  }
 @media only screen and (max-width: 1200px) {
