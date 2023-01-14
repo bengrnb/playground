@@ -28,7 +28,7 @@
 .text-8xl {font-size:6rem;/*96px*/line-height:1;}
 .text-9xl {font-size:8rem;/*128px*/line-height:1;}
 /* Size and Spacing */
-.thin {font-weight: 00;}
+.thin {font-weight: 100;}
 .extra-light {font-weight:200;}
 .light {font-weight:300;}
 .normal {font-weight:400;}
@@ -113,17 +113,41 @@ h3 {font-size:1.125rem;/*18px*/line-height:1.75rem;/*28px*/}
 
 
 /* ------------------------------------------------- */
+/* Body Start */
 body {
     /* Slate-10 */
     background-color: #f1f5f9;
     /* background-image: url("/images/home/bg-grid.svg"); */
 }
-button {
+/* Body End */
+
+/* Fold Buttons Start */
+.fold-button-secondary {
     height: 64px;
     border-radius: 6px;
     border: none;
     width: 220px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f5f9;
+    border: 3px solid #1e293b;
 }
+.fold-button-primary {
+    height: 64px;
+    border-radius: 6px;
+    border: none;
+    width: 220px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    border: 3px solid #1e293b;
+}
+/* Fold Buttons End */
+
 .parallax {
   /* The image used */
   background-image: url("../images/home/bg-grid.svg");
@@ -149,10 +173,27 @@ button {
 .button-text {
     font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/
     font-weight:500;
+    margin: 0px;
 }
 
 /* --------------------------------------------------- */
 /* About */
+
+/* About Button Start */
+.about-button {
+    width: 100%;
+    height: 40px;
+    background-color: #1e293b;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbd5e1;
+}
+/* About Button End */
+
 .infobox {
     color: #94a3b8;
 }
@@ -183,6 +224,26 @@ img.headhshot-small-screen {
 }
 /* ------------------------------ */
 /* Case Studies */
+
+/* View Case Study Button Start */
+.case-study-button-container {
+    text-decoration: none;
+    border-radius: 6px;
+}
+.case-study-button-text {
+    width: 100%;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #475569;
+    font-weight: 500;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+/* View Case Study Button End */
+
 .case-study-container-item {
     width: 50%;
 }
