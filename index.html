@@ -49,10 +49,6 @@
                 <div class="about-right-container flex flex-column align-items-center">
                     <img class="headhshot-large-screen br-10" style="max-width: 100%;" src="./images/home/headshot.jpg" alt="Headshot">
                     <div class="infobox flex flex-column br-10 p-1" style="border: #1e293b solid 0px; width: 100%;">
-                        <!-- <div class="flex mb-3 align-items-center" style="column-gap: .5rem;">
-                            <img src="./images/home/info.svg" alt="Cap logo" style="height:20px">
-                            <p class="text-xl m-0">Contact and Resume</p>
-                        </div> -->
                         <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
                             <p class="text-lg m-0">bengrnb@umich.edu</p>
                             <div class="popup" onclick="copy()">
@@ -112,7 +108,10 @@
         </div>
         <!-- End About -->
         <div id="case-studies" class="p-1" style="background-color: #1e293b;">
-            <p class="bold text-4xl slate-20 p-1 pt-0">Case Studies</p>
+            <div class="flex align-items-center  p-1 pt-0 pl-0" style="column-gap: 1rem;">
+                <img src="./images/home/briefcase.svg" style="height:40px;" alt="Briefcase">
+                <p class="bold text-4xl slate-20">Case Studies</p>
+            </div>
             <div class="flex case-study-container pb-2" style="column-gap: 2rem; row-gap: 2rem;">
                 <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
                     <div class="case-study-text-container p-2 flex flex-column justify-content-between">
@@ -126,7 +125,9 @@
                         </div>
                         <div>
                             <p class="br-20 slate-40">Created a prototype of a mobile application that would allow users to list and rent residential parking spaces.</p>
-                            <button style="width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            <a href="#about" style="width: 100%;">
+                                <button style="cursor:pointer; width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            </a>
                         </div>
                     </div>
                     <div class="case-study-image-container" style="width: 50%;">
@@ -145,7 +146,9 @@
                         <div>
                             <p class="br-20 slate-40">Created a website redesign prototype of the library's website - both desktop and mobile versions - to increase ease of use, accessibility, and connectivity to the community.
                             </p>
-                            <button style="width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            <a href="#about" style="width: 100%;">
+                                <button style="cursor:pointer; width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            </a>
                         </div>
                     </div>
                     <div class="case-study-image-container" style="width: 50%;">
@@ -166,7 +169,9 @@
                         <div>
                             <p class="br-20 slate-40">Created a website/webapp tool to help University of Michigan students locate and reserve “best-for-them” study spaces on campus.
                             </p>
-                            <button style="width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            <a href="#about" style="width: 100%;">
+                                <button style="cursor:pointer; width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            </a>
                         </div>
                     </div>
                     <div class="case-study-image-container" style="width: 50%;">
@@ -184,7 +189,9 @@
                         </div>
                         <div>
                             <p class="br-20 slate-40">Created a prototype of the University of Michigan's Counseling and Psychological Services website, to increase ease of use/accessibility to mental health resources.</p>
-                            <button style="width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            <a href="#about" style="width: 100%;">
+                                <button style="cursor:pointer; width: 100%; background-color: #475569;"><p class="medium slate-20">View Case Study</p></button>
+                            </a>
                         </div>
                     </div>
                     <div class="case-study-image-container" style="width: 50%;">
@@ -194,6 +201,5 @@
             </div>
         </div>
     </main>
-
 </body>
 </html>
