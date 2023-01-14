@@ -150,9 +150,11 @@ button {
     font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/
     font-weight:500;
 }
+
+/* --------------------------------------------------- */
 /* About */
 .infobox {
-    color: #cbd5e1;
+    color: #94a3b8;
 }
 .about-whole-container {
     display: flex;
@@ -173,6 +175,11 @@ img.headhshot-small-screen {
 }
 .smscreen-respons {
     align-items: center;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 /* ------------------------------ */
 /* Case Studies */

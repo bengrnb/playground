@@ -21,12 +21,14 @@
                 <text class="slate-80 text-7xl bold pb-2">Hello! I'm, Ben</text>
                 <text class="slate-50 text-xl medium pb-3" style="max-width: 700px;">I'm a master's degree student at the University of Michigan's School of Information, where I study Social Computing, Human Computer Interaction and User Experience Research and Design. I am passionate about improving people's well being through technology, innovation and design.</text>
                 <div class="flex">
-                    <img src="./images/home/linkedinlogo.svg" alt="Linkedin Logo" style="height: 40px;">
+                    <a href="https://www.linkedin.com/in/bengrnb/" target="_blank">
+                        <img src="./images/home/linkedinlogo.svg" alt="LinkedIn Logo" style="height: 40px;">
+                    </a>
                 </div>
             </div>
             <div class="home-buttons">
                 <button style="background-color: #f1f5f9; border: 3px solid #1e293b;"><a style="text-decoration: none;" href="#about"><p class="button-text slate-80 m-0">About</p></a></button>
-                <button style="background-color: #1e293b;"><a style="text-decoration: none;" href="/"><p class="button-text slate-10 m-0">Case Studies</p></a></button>
+                <button style="background-color: #1e293b;"><a style="text-decoration: none;" href="#case-studies"><p class="button-text slate-10 m-0">Case Studies</p></a></button>
             </div>
         </div>
         <!-- End Fold -->
@@ -52,16 +54,27 @@
                             <p class="text-xl m-0">Contact and Resume</p>
                         </div> -->
                         <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
-                            <p class="text-lg m-0">Linkedin</p>
-                            <button class="slate-30" style="width: 100px;height: 40px; background-color: #1e293b;">Visit</button>
-                        </div>
-                        <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
                             <p class="text-lg m-0">bengrnb@umich.edu</p>
-                            <button class="slate-30" style="width: 100px;height: 40px; background-color: #1e293b;">Copy</button>
+                            <div class="popup" onclick="copy()">
+                                <img id="copy" style="height:24px" src="./images/home/copy.svg" alt="Copy email">
+                            </div>
+                            <script>
+                                function copy() {
+                                    // Get the text field
+                                    navigator.clipboard.writeText('bengrnb@umich.edu');
+                                    document.querySelector("#copy").src="./images/home/copied.svg";
+                                }
+                            </script>
                         </div>
-                        <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
-                            <p class="text-lg m-0">Resume</p>
-                            <button class="slate-30" style="width: 100px;height: 40px; background-color: #1e293b;">Download</button>
+                        <div class="flex align-items-center justify-content-between mb-1">
+                            <a href="https://www.linkedin.com/in/bengrnb/" style="width: 100%;" target="_blank">
+                                <button class="slate-30" style="cursor:pointer; width: 100%;height: 40px; background-color: #1e293b; border: 1px solid #334155">LinkedIn</button>
+                            </a>
+                        </div>
+                        <div class="flex align-items-center justify-content-between mb-1">
+                            <a href="./files/Benjamin-Greenberg-Resume.pdf" style="width: 100%;" target="_blank">
+                                <button class="slate-30" style="cursor:pointer; width: 100%;height: 40px; background-color: #1e293b; border: 1px solid #334155">Resume</button>
+                            </a>
                         </div>
                     </div>
                     <div class="infobox flex flex-column br-10 p-0" style="border: #1e293b solid 2px; width: 100%;">
@@ -98,7 +111,7 @@
             </div>
         </div>
         <!-- End About -->
-        <div class="p-1" style="background-color: #1e293b;">
+        <div id="case-studies" class="p-1" style="background-color: #1e293b;">
             <p class="bold text-4xl slate-20 p-1 pt-0">Case Studies</p>
             <div class="flex case-study-container pb-2" style="column-gap: 2rem; row-gap: 2rem;">
                 <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
@@ -117,7 +130,7 @@
                         </div>
                     </div>
                     <div class="case-study-image-container" style="width: 50%;">
-                        <img style="border-radius: 0px 10px 10px 0px; object-fit: cover; height: 100%; width: 100%;" src="./images/home/homepage.png" alt="CAPS Redesigned Homepage">
+                        <img style="border-radius: 0px 10px 10px 0px; object-fit: cover; height: 100%; width: 100%;" src="./images/home/spaces.png" alt="CAPS Redesigned Homepage">
                     </div>
                 </div>
                 <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
