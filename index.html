@@ -11,13 +11,19 @@
 <body>
     <header>
         <nav>
-            
+            <div class="nav-container">
+                <div class="nav-items-container">
+                    <a href="#fold" id="home-nav"class="active-nav">Home</a>
+                    <a href="#about" id="about-nav">About</a>
+                    <a href="#case-studies" id="case-nav">Case Studies</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <!-- Start Fold -->
-        <img src="./images/home/gradiant.svg" alt="Gradiant" style="width: 100%;">
-        <div class="fold parallax flex justify-content-center align-items-center" style="column-gap: 8rem; height: 100vh;">
+        <!-- <img src="./images/home/gradiant.svg" alt="Gradiant" style="width: 100%;"> -->
+        <div id="fold" class=" fold parallax flex justify-content-center align-items-center" style="column-gap: 8rem; height: 100vh;">
             <div class="flex flex-column">
                 <div class="slate-80 text-7xl bold pb-2">Hello! I'm, Ben</div>
                 <div class="slate-50 text-xl medium pb-3" style="max-width: 700px;">I'm a master's degree student at the University of Michigan's School of Information, where I study Social Computing, Human Computer Interaction and User Experience Research and Design. I am passionate about improving people's well being through technology, innovation and design.</div>
@@ -38,7 +44,7 @@
         </div>
         <!-- End Fold -->
         <!-- Start About -->
-        <div id="about" class="flex justify-content-center align-items-center" style="background-color:#0f172a">
+        <div id="about" class="section flex justify-content-center align-items-center pt-5" style="background-color:#0f172a">
             <div class="about-whole-container">
                 <div class="smscreen-response flex flex-column justify-content-center">
                     <img class="headhshot-small-screen br-10"  src="./images/home/headshot.jpg" alt="Headshot">
@@ -58,11 +64,10 @@
                         <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
                             <p class="text-lg m-0">bengrnb@umich.edu</p>
                             <div class="popup" onclick="copy()">
-                                <img id="copy" style="height:24px" src="./images/home/copy.svg" alt="Copy email">
+                                <img id="copy" style="height:24px; z-index: 1;" src="./images/home/copy.svg" alt="Copy email">
                             </div>
                             <script>
                                 function copy() {
-                                    // Get the text field
                                     navigator.clipboard.writeText('bengrnb@umich.edu');
                                     document.querySelector("#copy").src="./images/home/copied.svg";
                                 }
@@ -112,7 +117,7 @@
         </div>
         <!-- End About -->
         <!-- Start Case Studies -->
-        <div id="case-studies" class="p-1" style="background-color: #1e293b;">
+        <div id="case-studies" class="section p-1 pt-5" style="background-color: #1e293b;">
             <div class="flex align-items-center  p-1 pt-0 pl-0" style="column-gap: 1rem;">
                 <img src="./images/home/briefcase.svg" style="height:40px;" alt="Briefcase">
                 <p class="bold text-4xl slate-20">Case Studies</p>
@@ -208,5 +213,6 @@
             <p>bengrnb@umich.edu</p>
         </div>
     </footer>
+    <script src="./js/scroll.js"></script>
 </body>
 </html>
