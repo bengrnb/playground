@@ -375,12 +375,18 @@ img.headhshot-small-screen {
 .article-content p {
     color: #94a3b8;
 }
-.article-content .indent-list {
+.article-content .quote-list {
     margin-left: 1rem;
     padding-left: 1rem;
     color: #94a3b8;
     padding-top: 0px;
     box-shadow: inset 1px 0 0 0 #94a3b8;
+    font-style: italic;
+}
+.article-content .bullet-list {
+    list-style-type: disc;
+    margin-left: 1rem;
+    color: #94a3b8;
 }
 .article-button {
     width: 100%;
