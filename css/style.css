@@ -375,6 +375,39 @@ img.headhshot-small-screen {
 .article-content p {
     color: #94a3b8;
 }
+.article-content .bullet-list {
+    list-style: circle;
+    padding-left: 2rem;
+    color: #94a3b8;
+    padding-top: 0px;
+}
+.article-button {
+    width: 100%;
+    height: 40px;
+    background-color: #1e293b;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbd5e1;
+}
+.article-image {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-image p {
+    width: 100%;
+    font-style: italic;
+}
+.article-content img {
+    border-radius: 10px;
+    width: 100%;
+}
 /* Articles End */
 
 
