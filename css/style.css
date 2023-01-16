@@ -375,6 +375,10 @@ img.headhshot-small-screen {
 .article-content p {
     color: #94a3b8;
 }
+.article-content h3 {
+    font-weight: 500;
+    color: #cbd5e1;
+}
 .article-content .quote-list {
     margin-left: 1rem;
     padding-left: 1rem;
