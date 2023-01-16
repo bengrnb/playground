@@ -410,10 +410,15 @@ img.headhshot-small-screen {
 .article-image p {
     width: 100%;
     font-style: italic;
+    text-align: center;
 }
 .article-content img {
     border-radius: 10px;
     width: 100%;
+}
+.long-image {
+    object-fit: contain;
+    max-height: 450px;
 }
 /* Articles End */
 
