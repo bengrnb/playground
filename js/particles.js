@@ -48,7 +48,7 @@ const options = {
       value: 100,
       density: {
         enable: true,
-        value_area: 1020
+        value_area: 900
       }
     },
     color: {
@@ -106,7 +106,7 @@ const options = {
       }
     }
   },
-  retina_detect: true
+  detectRetina: true
 };
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options

@@ -29,15 +29,13 @@
             </div>
         </nav>
     </header>
-    <div id="particles-js"></div>
     <main>
-        
         <!-- Start Fold -->
-        <!-- <img src="./images/home/gradiant.svg" alt="Gradiant" style="width: 100%;"> -->
-        <div id="fold"  class=" fold parallax flex justify-content-center align-items-center" style="column-gap: 8rem; height: 100vh;">
-            <div class="flex flex-column" style="background-color: #f1f5f9; padding: .4rem; border-radius: 10px;">
-                <div class="slate-80 text-7xl bold pb-2">Hello! I'm Ben.</div>
-                <div class="slate-50 text-xl medium pb-3" style="max-width: 700px;">I'm a master's degree student at the University of Michigan's School of Information, where I study Social Computing, Human Computer Interaction and User Experience Research and Design. I am passionate about improving people's well being through technology, innovation and design.</div>
+        <div id="particles-js"></div>
+        <div id="fold">
+            <div class="fold-intro">
+                <div class="fold-intro-header">Hello! I'm Ben.</div>
+                <div class="fold-intro-about">I'm a master's degree student at the University of Michigan's School of Information, where I study Social Computing, Human Computer Interaction and User Experience Research and Design. I am passionate about improving people's well being through technology, innovation and design.</div>
                 <div class="flex">
                     <a href="https://www.linkedin.com/in/bengrnb/" target="_blank">
                         <img src="./images/home/linkedinlogo.svg" alt="LinkedIn Logo" style="height: 40px;">
@@ -55,7 +53,7 @@
         </div>
         <!-- End Fold -->
         <!-- Start About -->
-        <div id="about" class="section flex justify-content-center align-items-center pt-5" style="background-color:#0f172a">
+        <div id="about" class="section">
             <div class="about-whole-container">
                 <div class="smscreen-response flex flex-column justify-content-center">
                     <img class="headhshot-small-screen br-10"  src="./images/home/headshot.jpg" alt="Headshot">
@@ -71,7 +69,7 @@
                 </div>
                 <div class="about-right-container flex flex-column align-items-center">
                     <img class="headhshot-large-screen br-10" style="max-width: 100%;" src="./images/home/headshot.jpg" alt="Headshot">
-                    <div class="infobox flex flex-column br-10 p-1" style="border: #1e293b solid 0px; width: 100%;">
+                    <div class="contact-info">
                         <div class="flex align-items-center justify-content-between mb-1" style="column-gap: .5rem;">
                             <p class="text-lg m-0">bengrnb@umich.edu</p>
                             <div class="popup" onclick="copy()">
@@ -85,21 +83,19 @@
                             </script>
                         </div>
                         <div class="flex align-items-center justify-content-between mb-1">
-
                             <a class="about-button" href="https://www.linkedin.com/in/bengrnb/" target="_blank">LinkedIn</a>
                         </div>
-
                         <div class="flex align-items-center justify-content-between mb-1">
                             <a class="about-button" href="./files/Benjamin-Greenberg-Resume.pdf" target="_blank">Resume</a>
                         </div>
                     </div>
-                    <div class="infobox flex flex-column br-10 p-0" style="border: #1e293b solid 2px; width: 100%;">
+                    <div class="education">
                         <div class="flex mb-3 align-items-center p-1 pb-0" style="column-gap: .5rem;">
                             <img src="./images/home/education.svg" alt="Cap logo" style="height:20px">
                             <p class="text-xl m-0">Education</p>
                         </div>
                         <div class="flex px-1" style="column-gap: .5rem;">
-                            <div class="flex align-items-center justify-content-center" style="border-radius: 50%; height: 26px; width: 26px; border: #334155 1px solid; background-color: #1e293b;">
+                            <div class="logo">
                                 <img style="height: 16px; width: 16px;" src="./images/home/UofMlogo.svg" alt="Uiversity of Michigan Logo">
                             </div>
                             <div style="flex-grow: 1;">
@@ -111,7 +107,7 @@
                             </div>
                         </div>
                         <div class="flex mt-2 p-1 pt-0" style="column-gap: .5rem;">
-                            <div class="flex align-items-center justify-content-center" style="border-radius: 50%; height: 26px; width: 26px; border: #334155 1px solid; background-color: #1e293b;">
+                            <div class="logo">
                                 <img style="height: 16px; width: 16px;" src="./images/home/UofMlogo.svg" alt="Uiversity of Michigan Logo">
                             </div>
                             <div style="flex-grow: 1;">
@@ -128,20 +124,20 @@
         </div>
         <!-- End About -->
         <!-- Start Case Studies -->
-        <div id="case-studies" class="section p-1 pt-5" style="background-color: #1e293b;">
-            <div class="flex align-items-center  p-1 pt-0 pl-0" style="column-gap: 1rem;">
+        <div id="case-studies" class="section">
+            <div class="flex align-items-center p-1 pt-0 pl-0" style="column-gap: 1rem;">
                 <img src="./images/home/briefcase.svg" style="height:40px;" alt="Briefcase">
                 <p class="bold text-4xl slate-20">Case Studies</p>
             </div>
             <div class="flex case-study-container pb-2" style="column-gap: 2rem; row-gap: 2rem;">
-                <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
+                <div class="case-study-item">
                     <div class="case-study-text-container p-2 flex flex-column justify-content-between">
                         <div>
                             <h1 class="slate-5 text-2xl medium m-0">Parkit</h1>
-                            <div class="tags flex" style="column-gap: 1rem;">
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Design</p>
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Research</p>
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UI Design</p>
+                            <div class="tags">
+                                <p>UX Design</p>
+                                <p>UX Research</p>
+                                <p>UI Design</p>
                             </div>
                         </div>
                         <div>
@@ -153,13 +149,13 @@
                         <img style="border-radius: 0px 10px 10px 0px; object-fit: cover; height: 100%; width: 100%;" src="./images/home/spaces.png" alt="U of M Spaces Project Screens">
                     </div>
                 </div>
-                <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
+                <div class="case-study-item">
                     <div class="case-study-text-container p-2 flex flex-column justify-content-between">
                         <div>
                             <h1 class="slate-5 text-2xl medium m-0">Cromaine District Library</h1>
-                            <div class="tags flex" style="column-gap: 1rem;">
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Design</p>
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Research</p>
+                            <div class="tags">
+                                <p>UX Design</p>
+                                <p>UX Research</p>
                             </div>
                         </div>
                         <div>
@@ -174,13 +170,13 @@
                 </div>
             </div>
             <div class="flex case-study-container" style="column-gap: 2rem; row-gap: 2rem;">
-                <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
+                <div class="case-study-item">
                     <div class="case-study-text-container p-2 flex flex-column justify-content-between">
                         <div>
                             <h1 class="slate-5 text-2xl medium m-0">U of M Spaces</h1>
-                            <div class="tags flex" style="column-gap: 1rem;">
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Design</p>
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Research</p>
+                            <div class="tags">
+                                <p>UX Design</p>
+                                <p>UX Research</p>
                             </div>
                         </div>
                         <div>
@@ -193,13 +189,13 @@
                         <img style="border-radius: 0px 10px 10px 0px; object-fit: cover; height: 100%; width: 100%;" src="./images/home/uofmspaces.png" alt="U of M Spaces Project Screens">
                     </div>
                 </div>
-                <div class="case-study-item flex br-10 justify-content-between" style="background-color: #0f172a;">
+                <div class="case-study-item">
                     <div class="case-study-text-container p-2 flex flex-column justify-content-between">
                         <div>
                             <h1 class="slate-5 text-2xl medium m-0">Counseling and Psychological Services</h1>
-                            <div class="tags flex" style="column-gap: 1rem;">
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Design</p>
-                                <p class="br-20 slate-5 text-sm slate-30" style="background-color: #1e293b; padding: .5rem;">UX Research</p>
+                            <div class="tags">
+                                <p>UX Design</p>
+                                <p>UX Research</p>
                             </div>
                         </div>
                         <div>

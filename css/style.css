@@ -154,17 +154,57 @@ nav {
     border-radius: 6px;
 }
 /* Nav End */
-
-
+/* --------------------------------------------------- */
 
 /* Body Start */
 body {
     /* Slate-10 */
     background-color: #f1f5f9;
-    /* background-image: url("/images/home/bg-grid.svg"); */
 }
 /* Body End */
+/* --------------------------------------------------- */
 
+/* Fold Start */
+#fold {
+    flex-direction: row;
+    padding: 50px;
+    column-gap: 8rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fold-intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f9;
+    padding: .4rem;
+    border-radius: 10px;
+}
+.fold-intro-header {
+    color:#1e293b;
+    font-size:4.5rem;
+    line-height:1;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.fold-intro-about {
+    max-width: 700px;
+    color:#64748b;
+    font-size:1.25rem;
+    line-height:1.75rem;
+    padding-bottom: 3rem;
+    font-weight:500;
+}
+.home-buttons {
+    column-gap: 4rem;
+    display: flex;
+}
+.button-text {
+    font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/
+    font-weight:500;
+    margin: 0px;
+}
 /* Fold Buttons Start */
 .fold-button-secondary {
     height: 64px;
@@ -191,38 +231,17 @@ body {
     border: 3px solid #1e293b;
 }
 /* Fold Buttons End */
-
-.parallax {
-  /* The image used */
-  /* background-image: url("../images/home/bg-grid.svg"); */
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.fold {
-    flex-direction: row;
-    padding: 50px;
-}
-
-.home-buttons {
-    column-gap: 4rem;
-    display: flex;
-}
-.button-text {
-    font-size:1.5rem;/* 24px */line-height:2rem;/*32px*/
-    font-weight:500;
-    margin: 0px;
-}
-
+/* Fold End */
 /* --------------------------------------------------- */
-/* About */
 
+/* About */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    background-color:#0f172a;
+}
 /* About Button Start */
 .about-button {
     width: 100%;
@@ -237,9 +256,33 @@ body {
     color: #cbd5e1;
 }
 /* About Button End */
-
-.infobox {
+.contact-info {
     color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+    border: #1e293b solid 0px;
+    width: 100%;
+}
+.education {
+    color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0px;
+    border: #1e293b solid 2px;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    border: #334155 1px solid;
+    background-color: #1e293b;
 }
 .about-whole-container {
     display: flex;
@@ -268,7 +311,11 @@ img.headhshot-small-screen {
 }
 /* ------------------------------ */
 /* Case Studies */
-
+#case-studies {
+    background-color: #1e293b;
+    padding: 1rem;
+    padding-top: 5rem;
+}
 /* View Case Study Button Start */
 .case-study-button-container {
     text-decoration: none;
@@ -288,12 +335,20 @@ img.headhshot-small-screen {
 }
 /* View Case Study Button End */
 .tags {
+    display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
+    column-gap: 1rem;
 }
 .tags p {
     margin: 0px;
     margin-bottom: 1rem;
+    border-radius: 20px;
+    color:#cbd5e1;
+    font-size:0.875rem;
+    line-height:1.25rem;
+    background-color: #1e293b;
+    padding: .5rem;
 }
 .case-study-container-item {
     width: 50%;
@@ -303,6 +358,10 @@ img.headhshot-small-screen {
 }
 .case-study-item {
     width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #0f172a;
 }
 /* Case Studies End */
 
@@ -460,6 +519,7 @@ footer a p {
 #particles-js{
     position: fixed;
     z-index: -1;
+    height: 100vh;
 }
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
@@ -507,7 +567,7 @@ footer a p {
     }
 }
 @media only screen and (max-width: 950px) {
-    .fold {
+    #fold {
         flex-direction: column;
         row-gap: 5rem;
         padding: 20px;
