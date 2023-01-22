@@ -1,6 +1,6 @@
 const options = {
   background: {
-    color: "#FFFFFF", // the canvas background color
+    color: "#f1f5f9", // the canvas background color
   },
   interactivity: {
     detect_on: 'window',
@@ -12,14 +12,14 @@ const options = {
       },
       onHover: {
         // this handles the mouse hover event
-        enable: true,
-        mode: "grab", // this make particles move away from the mouse
+        enable: false,
+        mode: "grab",
       },
       resize: true
     },
     modes: {
       grab: {
-        distance: 140,
+        distance: 100,
         line_linked: {
           opacity: 1
         }
@@ -45,49 +45,49 @@ const options = {
   },
   particles: {
     number: {
-      value: 80,
+      value: 100,
       density: {
         enable: true,
-        value_area: 900
+        value_area: 1020
       }
     },
     color: {
-      value: "#1e293b"
+      value: "#cbd5e1"
     },
     shape: {
-      type: "circle",
+      type: ["circle", "triangle", "polygon"],
       stroke: {
         width: 0,
-        color: "#1e293b"
+        color: "#cbd5e1"
       },
       polygon: {
         nb_sides: 5
       },
     },
     opacity: {
-      value: .05,
-      random: false,
+      value: 1,
+      random: true,
       anim: {
         enable: false,
-        speed: 0.1,
+        speed: .1,
         opacity_min: .1,
         sync: false
       }
     },
     size: {
-      value: 3,
+      value: 6,
       random: true,
       anim: {
-        enable: false,
+        enable: true,
         speed: 10,
         size_min: .1,
         sync: false
       }
     },
     line_linked: {
-      enable: true,
+      enable: false,
       distance: 150,
-      color: "#1e293b",
+      color: "#94a3b8",
       opacity: .4,
       width: 1
     },
@@ -95,10 +95,10 @@ const options = {
       enable: true,
       speed: 2,
       direction: "none",
-      random: false,
+      random: true,
       straight: false,
       out_mode: outerHeight,
-      bounce: false,
+      bounce: true,
       attract: {
         enable: false,
         rotateX: 600,
