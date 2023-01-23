@@ -311,6 +311,12 @@ img.headhshot-small-screen {
 }
 /* ------------------------------ */
 /* Case Studies */
+.case-study-header {
+    font-weight: bold;
+    color:#e2e8f0;
+    font-size:3rem;
+    line-height:1;
+}
 #case-studies {
     background-color: #1e293b;
     padding: 1rem;
@@ -612,4 +618,7 @@ footer a p {
 }
 @media only screen and (max-width: 420px) {
     .headhshot-small-screen { width: 100%;}
+    .case-study-header {
+        font-size:2.25rem;
+        line-height:2.5rem;}
 }
