@@ -141,7 +141,7 @@ nav {
     justify-content: center;
     column-gap: .5rem;
 }
-.nav-container a {
+.nav-container p, .nav-container a {
     font-weight: 300;
     color: #f1f5f9;
     margin: 0rem;
@@ -149,6 +149,9 @@ nav {
     margin-right: 1rem;
     padding: .5rem;
     text-decoration: none;
+}
+.nav-container p:hover {
+    cursor: pointer;
 }
 .active-nav {
     background-color: #334155;
@@ -171,6 +174,7 @@ body {
     flex-direction: row;
     padding: 50px;
     column-gap: 8rem;
+    min-height: 800px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -208,7 +212,7 @@ body {
     margin: 0px;
 }
 /* Fold Buttons Start */
-.fold-button-secondary {
+#about-button {
     height: 64px;
     border-radius: 6px;
     border: none;
@@ -220,7 +224,7 @@ body {
     background-color: #f1f5f9;
     border: 3px solid #1e293b;
 }
-.fold-button-primary {
+#case-study-button {
     height: 64px;
     border-radius: 6px;
     border: none;
@@ -231,6 +235,9 @@ body {
     align-items: center;
     background-color: #1e293b;
     border: 3px solid #1e293b;
+}
+#about-button:hover , #case-study-button:hover {
+    cursor: pointer;
 }
 /* Fold Buttons End */
 /* Fold End */
