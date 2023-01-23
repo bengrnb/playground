@@ -97,8 +97,7 @@ const options = {
       direction: "none",
       random: true,
       straight: false,
-      out_mode: outerHeight,
-      bounce: true,
+      bounce: false,
       attract: {
         enable: false,
         rotateX: 600,
