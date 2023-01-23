@@ -563,6 +563,12 @@ footer a p {
     .about-right-container {
         width: 100%;
     }
+    .education {
+        margin-bottom: 3rem;
+    }
+    .contact-info {
+        margin-top: 3rem;
+    }
     .headhshot-large-screen {
         display: none;
     }
