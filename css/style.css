@@ -223,6 +223,11 @@ body {
     align-items: center;
     background-color: #f1f5f9;
     border: 3px solid #1e293b;
+    transition: .5s ease-in-out;
+}
+#about-button:hover {
+    transition: .5s ease-in-out;
+    background: #e2e8f0;
 }
 #case-study-button {
     height: 64px;
@@ -235,6 +240,11 @@ body {
     align-items: center;
     background-color: #1e293b;
     border: 3px solid #1e293b;
+    transition: .5s ease-in-out;
+}
+#case-study-button:hover {
+    transition: .5s ease-in-out;
+    background: #0f172a;
 }
 #about-button:hover , #case-study-button:hover {
     cursor: pointer;
@@ -252,7 +262,7 @@ body {
     background-color:#0f172a;
 }
 /* About Button Start */
-.about-button {
+.contact-button {
     width: 100%;
     height: 40px;
     background-color: #1e293b;
@@ -263,6 +273,12 @@ body {
     align-items: center;
     justify-content: center;
     color: #cbd5e1;
+    transition: .5s ease-in-out;
+}
+.contact-button:hover {
+    background-color: #334155;
+    border: 1px solid #475569;
+    transition: .5s ease-in-out;
 }
 /* About Button End */
 .contact-info {
@@ -348,6 +364,11 @@ img.headhshot-small-screen {
     align-items: center;
     justify-content: center;
     margin: 0px;
+    transition: .5s ease-in-out;
+}
+.case-study-button-text:hover {
+    background-color: #334155;
+    transition: .5s ease-in-out;
 }
 /* View Case Study Button End */
 .tags {
