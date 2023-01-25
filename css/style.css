@@ -149,6 +149,7 @@ nav {
     margin-right: .5rem;
     padding: .5rem;
     text-decoration: none;
+    line-height: 1.5rem;
 }
 .nav-container p:hover {
     cursor: pointer;
