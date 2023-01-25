@@ -126,23 +126,23 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #1e293b;
+    background-color: rgba(30,41,59,.94);
     border: #334155 solid 1px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     justify-content: space-around;
-
     padding: .5rem;
 }
 .nav-items-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: .5rem;
+    /* column-gap: .5rem; */
 }
 .nav-container p, .nav-container a {
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 14px;
     color: #f1f5f9;
     margin: 0rem;
     margin-left: 1rem;
