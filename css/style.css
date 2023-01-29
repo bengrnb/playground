@@ -435,12 +435,27 @@ img.headhshot-small-screen {
 
 .article-container {
     padding: 5rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
     background-color: #0f172a;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* Article Map Begin */
+.article-map {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.article-map p, .article-map a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+.article-map a:hover {
+    text-decoration: underline;
+}
+/* Article Map End */
+
 /* Article Header Begin */
 .article-header {
     max-width: 850px;
@@ -600,9 +615,9 @@ footer a p {
     .case-study-container {
         flex-direction: column;
     }
-    .case-study-item {
+    /* .case-study-item {
         max-height: 450px;
-    }
+    } */
     .case-study-item {
         width: 100%;
     }
