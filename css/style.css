@@ -614,9 +614,9 @@ footer a p {
     .case-study-container {
         flex-direction: column;
     }
-    /* .case-study-item {
+    .case-study-item {
         max-height: 450px;
-    } */
+    }
     .case-study-item {
         width: 100%;
     }
@@ -709,4 +709,7 @@ footer a p {
     .case-study-header {
         font-size:2.25rem;
         line-height:2.5rem;}
+    .case-study-item {
+        max-height: fit-content;
+    }
 }
