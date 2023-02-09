@@ -145,7 +145,6 @@ nav {
 .nav-container p, .nav-container a {
     font-weight: 500;
     font-size: 14px;
-    color: #f1f5f9;
     margin: 0rem;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -156,24 +155,24 @@ nav {
 .nav-container p:hover {
     cursor: pointer;
 }
+.inactive-nav {
+    color: #cbd5e1;
+}
 .active-nav {
-    background-color: #334155;
-    padding: .5rem;
-    border-radius: 6px;
-    background-color: #334155;
-    border-radius: 6px;
+    color: #f1f5f9;
 }
 .nav-item {
     display: flex;
     flex-direction: column;
     row-gap: 6px;
 }
-.nav-item a:hover {
+.nav-item a:hover, .nav-item p:hover {
     background-color: #334155;
     padding: .5rem;
     border-radius: 6px;
     background-color: #334155;
     border-radius: 6px;
+    color: #f1f5f9;
 }
 .nav-line-active {
     border: 1px solid #94a3b8;
@@ -615,9 +614,9 @@ footer a p {
     .case-study-container {
         flex-direction: column;
     }
-    /* .case-study-item {
+    .case-study-item {
         max-height: 450px;
-    } */
+    }
     .case-study-item {
         width: 100%;
     }
@@ -710,4 +709,7 @@ footer a p {
     .case-study-header {
         font-size:2.25rem;
         line-height:2.5rem;}
+    .case-study-item {
+        max-height: fit-content;
+    }
 }
