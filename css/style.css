@@ -1,3 +1,49 @@
+:root {
+    /* slate color */
+    --color-5: #f8fafc;
+    --color-10: #f1f5f9;
+    --color-20: #e2e8f0;
+    --color-30: #cbd5e1;
+    --color-40: #94a3b8;
+    --color-50: #64748b;
+    --color-60: #475569;
+    --color-70: #334155;
+    --color-80: #1e293b;
+    --color-90: #0f172a;
+}
+[data-theme='Mocha'] {
+    --color-5: white;
+    --color-10: white;
+    --color-20: white;
+    --color-30: white;
+    --color-40: white;
+    --color-50: black;
+    --color-60: black;
+    --color-70: black;
+    --color-80: black;
+    --color-90: #1c1917;
+}
+button {
+    height: 28px;
+    width: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-90);
+    border: 1px solid var(--color-60);
+    color: var(--color-30);
+    border-radius: 6px;
+}
+/* Standalone Color Classes */
+.color-5 {color: var(--color-5)}
+.color-10 {color: var(--color-10)}
+.color-20 {color: var(--color-20)}
+.color-30 {color: var(--color-30)}
+.color-40 {color: var(--color-40)}
+.color-50 {color: var(--color-50)}
+.color-60 {color: var(--color-60)}
+.color-70 {color: var(--color-70)}
+.color-80 {color: var(--color-80)}
+.color-90 {color: var(--color-90)}
 /* ---------------------Colors--------------------- */
 /* Slate Colors */
 .slate-5 {color:#f8fafc }
@@ -126,8 +172,8 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(30,41,59,1);
-    box-shadow: 0px 1px 3px 0px #475569;
+    background-color: var(--color-80);
+    box-shadow: 0px 1px 3px 0px var(--color-60);
     /* border: #334155 solid 1px; */
     border-top: 0px;
     border-left: 0px;
@@ -156,10 +202,10 @@ nav {
     cursor: pointer;
 }
 .inactive-nav {
-    color: #cbd5e1;
+    color: var(--color-30);
 }
 .active-nav {
-    color: #f1f5f9;
+    color: var(--color-10);
 }
 .nav-item {
     display: flex;
@@ -167,20 +213,19 @@ nav {
     row-gap: 6px;
 }
 .nav-item a:hover, .nav-item p:hover {
-    background-color: #334155;
+    background-color: var(--color-70);
     padding: .5rem;
     border-radius: 6px;
-    background-color: #334155;
     border-radius: 6px;
-    color: #f1f5f9;
+    color: var(--color-10);
 }
 .nav-line-active {
-    border: 1px solid #94a3b8;
+    border: 1px solid var(--color-40);
     margin-left: 1rem;
     margin-right: 1rem;
 }
 .nav-line-inactive {
-    border: 1px solid #1e293b;
+    border: 1px solid var(--color-80);
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -189,8 +234,7 @@ nav {
 
 /* Body Start */
 body {
-    /* Slate-10 */
-    background-color: #f1f5f9;
+    background-color: var(--color-10);
 }
 /* Body End */
 /* --------------------------------------------------- */
@@ -214,7 +258,7 @@ body {
     border-radius: 10px;
 }
 .fold-intro-header {
-    color:#1e293b;
+    color: var(--color-80);
     font-size:4.5rem;
     line-height:1;
     font-weight: bold;
@@ -222,7 +266,7 @@ body {
 }
 .fold-intro-about {
     max-width: 700px;
-    color:#64748b;
+    color:var(--color-50);
     font-size:1.25rem;
     line-height:1.75rem;
     padding-bottom: 3rem;
@@ -247,13 +291,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f1f5f9;
-    border: 3px solid #1e293b;
+    background-color: var(--color-10);
+    border: 3px solid var(--color-80);
     transition: .5s ease-in-out;
 }
 #about-button:hover {
     transition: .5s ease-in-out;
-    background: #e2e8f0;
+    background: var(--color-20);
 }
 #case-study-button {
     height: 64px;
@@ -264,13 +308,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1e293b;
-    border: 3px solid #1e293b;
+    background-color: var(--color-80);
+    border: 3px solid var(--color-80);
     transition: .5s ease-in-out;
 }
 #case-study-button:hover {
     transition: .5s ease-in-out;
-    background: #0f172a;
+    background: var(--color-90);
 }
 #about-button:hover , #case-study-button:hover {
     cursor: pointer;
@@ -285,46 +329,46 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-    background-color:#0f172a;
+    background-color:var(--color-90);
 }
 /* About Button Start */
 .contact-button {
     width: 100%;
     height: 40px;
-    background-color: #1e293b;
+    background-color: var(--color-80);
     border-radius: 10px;
-    border: 1px solid #334155;
+    border: 1px solid var(--color-70);
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #cbd5e1;
+    color: var(--color-30);
     transition: .5s ease-in-out;
     padding-top: .2rem;
     padding-bottom: .2rem;
 }
 .contact-button:hover {
-    background-color: #334155;
-    border: 1px solid #475569;
+    background-color: var(--color-70);
+    border: 1px solid var(--color-60);
     transition: .5s ease-in-out;
 }
 /* About Button End */
 .contact-info {
-    color: #94a3b8;
+    color: var(--color-40);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 1rem;
-    border: #1e293b solid 0px;
+    border: var(--color-80) solid 0px;
     width: 100%;
 }
 .education {
-    color: #94a3b8;
+    color: var(--color-40);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 0px;
-    border: #1e293b solid 2px;
+    border: var(--color-80) solid 2px;
     width: 100%;
 }
 .logo {
@@ -334,8 +378,8 @@ body {
     border-radius: 50%;
     height: 26px;
     width: 26px;
-    border: #334155 1px solid;
-    background-color: #1e293b;
+    border: var(--color-70) 1px solid;
+    background-color: var(--color-80);
 }
 .about-whole-container {
     display: flex;
@@ -366,12 +410,12 @@ img.headhshot-small-screen {
 /* Case Studies */
 .case-study-header {
     font-weight: bold;
-    color:#e2e8f0;
+    color: var(--color-20);
     font-size:3rem;
     line-height:1;
 }
 #case-studies {
-    background-color: #1e293b;
+    background-color: var(--color-80);
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -385,9 +429,9 @@ img.headhshot-small-screen {
     width: 100%;
     height: 64px;
     border-radius: 6px;
-    background-color: #475569;
+    background-color: var(--color-60);
     font-weight: 500;
-    color: #e2e8f0;
+    color: var(--color-20);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,7 +439,7 @@ img.headhshot-small-screen {
     transition: .5s ease-in-out;
 }
 .case-study-button-text:hover {
-    background-color: #334155;
+    background-color: var(--color-70);
     transition: .5s ease-in-out;
 }
 /* View Case Study Button End */
@@ -409,10 +453,10 @@ img.headhshot-small-screen {
     margin: 0px;
     margin-bottom: 1rem;
     border-radius: 20px;
-    color:#cbd5e1;
+    color:var(--color-30);
     font-size:0.875rem;
     line-height:1.25rem;
-    background-color: #1e293b;
+    background-color: var(--color-80);
     padding: .5rem;
 }
 .case-study-container-item {
@@ -426,7 +470,7 @@ img.headhshot-small-screen {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: #0f172a;
+    background-color: var(--color-90);
 }
 /* Case Studies End */
 
@@ -435,7 +479,7 @@ img.headhshot-small-screen {
 .article-container {
     padding: 5rem;
     padding-top: 6rem;
-    background-color: #0f172a;
+    background-color: var(--color-90);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,7 +491,7 @@ img.headhshot-small-screen {
     column-gap: .5rem;
 }
 .article-map p, .article-map a {
-    color: #94a3b8;
+    color: var(--color-40);
     text-decoration: none;
 }
 .article-map a:hover {
@@ -468,23 +512,23 @@ img.headhshot-small-screen {
     font-size:3rem;
     line-height:1;
     line-height:1;
-    color: #e2e8f0;
+    color: var(--color-20);
     font-weight: 500;
 }
 .article-summary {
-    background-color: #1e293b;
+    background-color: var(--color-80);
     padding: 1rem;
     border-radius: 10px;
 }
 .article-summary h3 {
-    color: #cbd5e1;
+    color: var(--color-30);
 }
 .article-overview {
-    color: #94a3b8;
+    color: var(--color-40);
     padding-bottom: 2rem;
 }
 .article-facts {
-    color: #94a3b8;
+    color: var(--color-40);
     display: flex;
     justify-content: space-between;
     column-gap: 2rem;
@@ -504,7 +548,7 @@ img.headhshot-small-screen {
     padding-top: 2rem;
 }
 .article-content h1 {
-    color: #cbd5e1;
+    color: var(--color-30);
     font-weight: 500;
 }
 .article-content ul{
@@ -512,44 +556,44 @@ img.headhshot-small-screen {
     padding: 0px;
 }
 .article-content p {
-    color: #94a3b8;
+    color: var(--color-40);
 }
 .article-content h3 {
     font-weight: 500;
-    color: #cbd5e1;
+    color: var(--color-30);
 }
 .article-content .quote-list {
     margin-left: 1rem;
     padding-left: 1rem;
-    color: #94a3b8;
+    color: var(--color-40);
     padding-top: 0px;
-    box-shadow: inset 1px 0 0 0 #94a3b8;
+    box-shadow: inset 1px 0 0 0 var(--color-40);
     font-style: italic;
 }
 .article-content .bullet-list {
     list-style-type: disc;
     margin-left: 1rem;
-    color: #94a3b8;
+    color: var(--color-40);
 }
 .article-button {
     width: 100%;
     height: 40px;
     padding-top: .6rem;
     padding-bottom: .6rem;
-    background-color: #1e293b;
+    background-color: var(--color-80);
     border-radius: 10px;
-    border: 1px solid #334155;
+    border: 1px solid var(--color-70);
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #cbd5e1;
+    color: var(--color-30);
     transition: .5s ease-in-out;
 }
 .article-button:hover {
     transition: .5s ease-in-out;
-    background-color: #334155;
-    border: 1px solid #475569;
+    background-color: var(--color-70);
+    border: 1px solid var(--color-60);
 }
 .article-image {
     padding-top: 2rem;
@@ -585,21 +629,22 @@ footer {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    background-color: #334155;
+    background-color: var(--color-70);
 }
 .footer-info {
     display: flex;
-    color: #94a3b8;
+    color: var(--color-40);
     column-gap: 1rem;
+    align-items: center;
 }
 footer a {
-    text-decoration-color: #cbd5e1;
+    text-decoration-color: var(--color-30);
 }
 footer p {
-    color: #cbd5e1;
+    color: var(--color-30);
 }
 footer a p {
-    color: #cbd5e1;
+    color: var(--color-30);
 }
 /* Footer End */
 /* ------------------------ */
