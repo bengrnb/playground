@@ -33,6 +33,9 @@ button {
     color: var(--color-30);
     border-radius: 6px;
 }
+button:hover {
+    cursor: pointer;
+}
 /* Standalone Color Classes */
 .color-5 {color: var(--color-5)}
 .color-10 {color: var(--color-10)}
