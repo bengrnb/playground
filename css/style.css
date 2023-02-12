@@ -24,8 +24,8 @@
     --color-90: #1c1917;
 }
 button {
-    height: 28px;
-    width: 100px;
+    max-height: 28px;
+    max-width: 100px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: var(--color-90);
