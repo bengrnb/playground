@@ -275,7 +275,7 @@ body {
 }
 .fold-intro-about {
     max-width: 700px;
-    color:var(--color-50);
+    color:var(--color-60);
     font-size:1.25rem;
     line-height:1.75rem;
     padding-bottom: 3rem;
