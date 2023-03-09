@@ -20,6 +20,12 @@ window.onscroll = () => {
 
         document.querySelector("#case-nav").classList.remove("active-nav");
         document.querySelector("#case-nav").classList.add("inactive-nav");
+
+        document.querySelector("#design-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#design-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#design-nav").classList.remove("active-nav");
+        document.querySelector("#design-nav").classList.add("inactive-nav");
     }
     // if you are at the about section and not at the case study section
     else if (scrollY >= sections[0].offsetTop-60 && scrollY < sections[1].offsetTop-60) {
@@ -40,9 +46,15 @@ window.onscroll = () => {
 
         document.querySelector("#case-nav").classList.remove("active-nav");
         document.querySelector("#case-nav").classList.add("inactive-nav");
+
+        document.querySelector("#design-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#design-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#design-nav").classList.remove("active-nav");
+        document.querySelector("#design-nav").classList.add("inactive-nav");
     }
     // if you are past the about section and at the case study section
-    else if (scrollY > sections[0].offsetTop-60 && scrollY >= sections[1].offsetTop-60) {
+    else if (scrollY >= sections[1].offsetTop-60 && scrollY <= sections[2].offsetTop-60) {
         document.querySelector("#case-nav-line").classList.add("nav-line-active");
         document.querySelector("#case-nav-line").classList.remove("nav-line-inactive");
 
@@ -51,20 +63,56 @@ window.onscroll = () => {
 
         document.querySelector("#about-nav-line").classList.remove("nav-line-active");
         document.querySelector("#about-nav-line").classList.add("nav-line-inactive");
-        
+
         document.querySelector("#about-nav").classList.remove("active-nav");
         document.querySelector("#about-nav").classList.add("inactive-nav");
-        
+
         document.querySelector("#home-nav-line").classList.remove("nav-line-active");
         document.querySelector("#home-nav-line").classList.add("nav-line-inactive");
 
         document.querySelector("#home-nav").classList.remove("active-nav");
         document.querySelector("#home-nav").classList.add("inactive-nav");
+
+        document.querySelector("#design-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#design-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#design-nav").classList.remove("active-nav");
+        document.querySelector("#design-nav").classList.add("inactive-nav");
+        console.log(scrollY > sections[0].offsetTop-60 && scrollY >= sections[1].offsetTop-60)
+        console.log(scrollY > sections[1].offsetTop-60 && scrollY >= sections[2].offsetTop-60)
+    }
+    // if you are past the case study section and at the design work section
+    else if (scrollY > sections[1].offsetTop-60 && scrollY >= sections[2].offsetTop-60) {
+        console.log('here')
+        document.querySelector("#case-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#case-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#case-nav").classList.remove("active-nav");
+        document.querySelector("#case-nav").classList.add("inactive-nav");
+
+        document.querySelector("#about-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#about-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#about-nav").classList.remove("active-nav");
+        document.querySelector("#about-nav").classList.add("inactive-nav");
+
+        document.querySelector("#home-nav-line").classList.remove("nav-line-active");
+        document.querySelector("#home-nav-line").classList.add("nav-line-inactive");
+
+        document.querySelector("#home-nav").classList.remove("active-nav");
+        document.querySelector("#home-nav").classList.add("inactive-nav");
+
+        document.querySelector("#design-nav-line").classList.add("nav-line-active");
+        document.querySelector("#design-nav-line").classList.remove("nav-line-inactive");
+
+        document.querySelector("#design-nav").classList.add("active-nav");
+        document.querySelector("#design-nav").classList.remove("inactive-nav");
     }
 }
 const home = document.querySelector('#home-nav')
 const about = document.querySelector('#about-nav')
 const caseStudy = document.querySelector('#case-nav')
+const designWork = document.querySelector('#design-nav')
 const aboutButton = document.querySelector('#about-button')
 const caseButton = document.querySelector('#case-study-button')
 home.addEventListener("click", () => {
@@ -82,6 +130,11 @@ caseStudy.addEventListener("click", () => {
         behavior: 'smooth'
       });
 })
+designWork.addEventListener("click", () => {
+    document.querySelector('#design-work').scrollIntoView({
+        behavior: 'smooth'
+      });
+})
 aboutButton.addEventListener("click", () => {
     document.querySelector('#about').scrollIntoView({
         behavior: 'smooth'
@@ -92,4 +145,3 @@ caseButton.addEventListener("click", () => {
         behavior: 'smooth'
       });
 })
-
