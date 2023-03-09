@@ -837,8 +837,14 @@ footer a p {
     #home-nav {
         margin-left: 0px;
     }
+    #home-nav-line {
+        margin-left: .5rem;
+    }
     #design-nav{
         margin-right: 0px;
+    }
+    #design-nav-line {
+        margin-right: .5rem;
     }
     .headhshot-small-screen { width: 100%;}
     .case-study-header {
