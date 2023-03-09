@@ -835,10 +835,10 @@ footer a p {
         padding-right: 0px;
     }
     #home-nav {
-        padding-left: 0px;
+        margin-left: 0px;
     }
     #design-nav{
-        padding-right: 0px;
+        margin-right: 0px;
     }
     .headhshot-small-screen { width: 100%;}
     .case-study-header {
