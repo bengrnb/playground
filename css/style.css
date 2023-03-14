@@ -575,6 +575,7 @@ img.headhshot-small-screen {
 .article-map p, .article-map a {
     color: var(--color-40);
     text-decoration: none;
+    font-size: .875rem;
 }
 .article-map a:hover {
     text-decoration: underline;
@@ -598,9 +599,9 @@ img.headhshot-small-screen {
     font-weight: 500;
 }
 .article-summary {
-    background-color: var(--color-80);
     padding: 1rem;
     border-radius: 10px;
+    border: 1px solid var(--color-70);
 }
 .article-summary h3 {
     color: var(--color-30);
