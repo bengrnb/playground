@@ -461,12 +461,12 @@ img.headhshot-small-screen {
 .tags p {
     margin: 0px;
     margin-bottom: 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     color:var(--color-30);
-    font-size:0.875rem;
+    font-size:0.75rem;
     line-height:1.25rem;
     background-color: var(--color-80);
-    padding: .5rem;
+    padding: .4rem;
 }
 .case-study-container-item {
     width: 50%;
