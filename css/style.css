@@ -461,7 +461,7 @@ img.headhshot-small-screen {
 .tags p {
     margin: 0px;
     margin-bottom: 1rem;
-    border-radius: 10px;
+    border-radius: 6px;
     color:var(--color-30);
     font-size:0.75rem;
     line-height:1.25rem;
