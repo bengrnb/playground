@@ -9,3 +9,11 @@ projectCard.forEach(project => project.addEventListener('mouseleave', (e) => {
     e.target.children[1].children[1].classList.add('hide')
     e.target.children[1].children[1].classList.remove('show')
 }))
+projectCard.forEach(project => project.addEventListener('touchstart', (e) => {
+    e.target.children[1].children[1].classList.add('show')
+    e.target.children[1].children[1].classList.remove('hide')
+}))
+projectCard.forEach(project => project.addEventListener('touchend', (e) => {
+    e.target.children[1].children[1].classList.add('hide')
+    e.target.children[1].children[1].classList.remove('show')
+}))
