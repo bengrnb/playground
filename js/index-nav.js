@@ -1,12 +1,9 @@
-// const IndexNav = () => {
-//     return <p>Look here</p>
-// }
-document.querySelector("#index-navigation").innerHTML =
+document.querySelector("header").innerHTML =
 `<nav>
     <div class="nav-container">
         <div class="nav-items-container">
             <div class="nav-item">
-                <a href="./" id="home-nav" class="active-nav">Home</a>
+                <a href="./#" id="home-nav" class="active-nav">Home</a>
                 <div id="home-nav-line" class="nav-line-active"></div>
             </div>
             <div class="nav-item">
