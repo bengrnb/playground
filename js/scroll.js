@@ -126,7 +126,7 @@ about.addEventListener("click", () => {
       });
 })
 caseStudy.addEventListener("click", () => {
-    document.querySelector('#case-studies').scrollIntoView({
+    document.querySelector('#projects').scrollIntoView({
         behavior: 'smooth'
       });
 })
@@ -141,7 +141,7 @@ aboutButton.addEventListener("click", () => {
       });
 })
 caseButton.addEventListener("click", () => {
-    document.querySelector('#case-studies').scrollIntoView({
+    document.querySelector('#projects').scrollIntoView({
         behavior: 'smooth'
       });
 })

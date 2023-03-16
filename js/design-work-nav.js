@@ -11,7 +11,7 @@ document.querySelector("header").innerHTML =
                 <div id="about-nav-line" class="nav-line-inactive"></div>
             </div>
             <div class="nav-item">
-                <a href="./#case-studies" id="case-nav" class="inactive-nav">Projects</a>
+                <a href="./#projects" id="case-nav" class="inactive-nav">Projects</a>
                 <div id="case-nav-line" class="nav-line-inactive"></div>
             </div>
             <div class="nav-item">
