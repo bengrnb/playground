@@ -715,11 +715,16 @@ img.headhshot-small-screen {
 /* Footer Start */
 footer {
     display: flex;
-    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 1rem;
     justify-content: space-around;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     background-color: var(--color-70);
+}
+footer div {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .footer-info {
     display: flex;
