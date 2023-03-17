@@ -8,9 +8,11 @@ document.querySelector("footer").innerHTML =
     <a href="https://www.linkedin.com/in/bengrnb/" target="_blank"><p>LinkedIn</p></a>
     <p>|</p>
     <p>bengrnb@umich.edu</p>
-</div>`
-{/* <div class="footer-info">
-    <p>Theme</p>
+</div>
+<div class="footer-info">
+    <p>Theme (beta)</p>
     <button data-set-theme="">Default</button>
-    <button data-set-theme="Mocha">Mocha</button>
-</div> */}
+    <button data-set-theme="Steril">Steril</button>
+    </div>
+    `
+    // <button data-set-theme="Mocha">Mocha</button>

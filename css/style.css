@@ -10,6 +10,9 @@
     --color-70: #334155;
     --color-80: #1e293b;
     --color-90: #0f172a;
+    --color-0: #1e293b;
+    --color-00: #475569;
+    --color-000: #f1f5f9;
 }
 [data-theme='Mocha'] {
     --color-5: white;
@@ -22,6 +25,24 @@
     --color-70: black;
     --color-80: black;
     --color-90: #1c1917;
+    --color-0: black;
+    --color-00: black;
+    --color-000: white;
+}
+[data-theme='Steril'] {
+    --color-5: #111111;
+    --color-10: #292929;
+    --color-20: #434343;
+    --color-30: #434343;
+    --color-40: #3D3D3D;
+    --color-50: #747474;
+    --color-60: #A7A7A7;
+    --color-70: #F7F7F7;
+    --color-80: white;
+    --color-90: #F0F0F0;
+    --color-0: #434343;
+    --color-00: #3D3D3D;
+    --color-000: white;
 }
 button {
     max-height: 28px;
@@ -40,7 +61,7 @@ svg .logo-color {
     fill: var(--color-50);
 }
 svg .logo-color-background {
-    fill: var(--color-10);
+    fill: var(--color-000);
 }
 /* Standalone Color Classes */
 .color-5 {color: var(--color-5)}
@@ -238,6 +259,30 @@ nav {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+/* Nav Buttons Start */
+.nav-buttons-container {
+    position: fixed;
+    z-index: 2;
+    right: 2rem;
+    top:1.2rem;
+}
+.nav-buttons {
+    padding: .5rem;
+    background-color: var(--color-70);
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--color-5);
+    font-size: 15px;
+    transition: .5s ease-in-out;
+}
+.nav-buttons-container a:first-child {
+    margin-right: .5rem;
+}
+.nav-buttons:hover {
+    background-color: var(--color-60);
+    transition: .5s ease-in-out;
+}
+/* Nav Buttons End */
 /* Nav End */
 /* --------------------------------------------------- */
 
@@ -267,7 +312,7 @@ body {
     border-radius: 10px;
 }
 .fold-intro-header {
-    color: var(--color-80);
+    color: var(--color-0);
     font-size:4.5rem;
     line-height:1;
     font-weight: bold;
@@ -275,7 +320,7 @@ body {
 }
 .fold-intro-about {
     max-width: 700px;
-    color:var(--color-60);
+    color:var(--color-00);
     font-size:1.25rem;
     line-height:1.75rem;
     padding-bottom: 3rem;
@@ -678,10 +723,6 @@ img.headhshot-small-screen {
 .article-content p {
     color: var(--color-40);
 }
-.article-content .problem-statement {
-    /* font-weight: 500; */
-    /* color: var(--color-30); */
-}
 .article-content h3 {
     font-weight: 500;
     color: var(--color-30);
@@ -824,6 +865,9 @@ footer a p {
     }
 }
 @media only screen and (max-width: 950px) {
+    .nav-buttons-container {
+        right: 1rem;
+    }
     #fold {
         flex-direction: column;
         row-gap: 5rem;
@@ -859,6 +903,11 @@ footer a p {
     }
     .article-facts-half {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .nav-buttons-container {
+        display: none;
     }
 }
 @media only screen and (max-width: 420px) {

@@ -20,4 +20,8 @@ document.querySelector("header").innerHTML =
             </div>
         </div>
     </div>
-</nav>`
+</nav>
+<div class="nav-buttons-container">
+<a href="https://www.linkedin.com/in/bengrnb/" class="nav-buttons" target="_blank">Linkedin</a>
+<a href="./files/BGreenberg-Resume.pdf" target="_blank" class="nav-buttons">Resume</a>
+</div>`
