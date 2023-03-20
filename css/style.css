@@ -57,12 +57,6 @@ button {
 button:hover {
     cursor: pointer;
 }
-svg .logo-color {
-    fill: var(--color-50);
-}
-svg .logo-color-background {
-    fill: var(--color-000);
-}
 /* Standalone Color Classes */
 .color-5 {color: var(--color-5)}
 .color-10 {color: var(--color-10)}
