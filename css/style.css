@@ -419,6 +419,9 @@ body {
     border: var(--color-80) solid 2px;
     width: 100%;
 }
+.education svg {
+    stroke: var(--color-40);
+}
 .logo {
     display: flex;
     align-items: center;
@@ -472,6 +475,9 @@ img.headhshot-small-screen {
     justify-content: center;
     padding-bottom: 1rem;
     column-gap: 1rem;
+}
+#projects .section-header svg {
+    stroke: var(--color-30);
 }
 .section-header p {
     font-weight: bold;
@@ -576,6 +582,9 @@ img.headhshot-small-screen {
     justify-content: center;
     row-gap: 2rem;
     column-gap: 2rem;
+}
+#design-work .section-header svg {
+    stroke: var(--color-20);
 }
 .design-work-item {
     position: relative;
