@@ -12,7 +12,7 @@
     --color-90: #0f172a;
     --color-0: #1e293b;
     --color-00: #475569;
-    --color-000: #f1f5f9;
+    --color-000: rgba(15, 23, 42, .7);
 }
 [data-theme='Mocha'] {
     --color-5: white;
@@ -27,7 +27,7 @@
     --color-90: #1c1917;
     --color-0: black;
     --color-00: black;
-    --color-000: white;
+    --color-000: rgba(0,0,0,0.7);
 }
 [data-theme='Steril'] {
     --color-5: #111111;
@@ -42,7 +42,7 @@
     --color-90: #F0F0F0;
     --color-0: #434343;
     --color-00: #3D3D3D;
-    --color-000: white;
+    --color-000: rgba(240,240,240,0.8);
 }
 button {
     max-height: 28px;
@@ -586,7 +586,7 @@ img.headhshot-small-screen {
     border-radius: 8px;
 }
 .text-overlay {
-    background: rgba(0,0,0,0.7);
+    background-color: var(--color-000);
     color: var(--color-20);
     position: absolute;
     height: 100%;
