@@ -490,8 +490,7 @@ img.headhshot-small-screen {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    row-gap: 4rem;
-    column-gap: 4rem;
+    gap: 2rem;
     max-width: 1400px;
 }
 .project-card {
