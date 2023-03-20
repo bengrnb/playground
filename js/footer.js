@@ -10,9 +10,11 @@ document.querySelector("footer").innerHTML =
     <p>bengrnb@umich.edu</p>
 </div>
 <div class="footer-info">
-    <p>Theme (beta)</p>
-    <button data-set-theme="">Default</button>
-    <button data-set-theme="Steril">Steril</button>
+    <p>Theme:</p>
+    <div class="button-div">
+        <button data-set-theme="">Default</button>
+        <button data-set-theme="Steril">Steril</button>
     </div>
+</div>
     `
     // <button data-set-theme="Mocha">Mocha</button>
