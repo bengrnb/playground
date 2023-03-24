@@ -619,7 +619,7 @@ img.headhshot-small-screen {
     transition: .5s ease-in-out;
 }
 .design-image {
-    padding-top: 5rem;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -638,6 +638,32 @@ img.headhshot-small-screen {
     font-style: italic;
     text-align: center;
     color: var(--color-40);
+}
+.poster-svg {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.poster-svg svg path {
+    fill: var(--color-5);
+}
+.poster-citation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
+}
+.poster-citation svg {
+    max-height: 100px;
+    max-width: 180px;
+    width: inherit;
+}
+.materials-citations a {
+    text-decoration: none;
+    color: var(--color-40);
+    background-color: var(--color-80);
+    overflow-wrap: break-word;
 }
 /* Design Work End */
 /* ------------------------------ */
