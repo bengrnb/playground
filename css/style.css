@@ -596,6 +596,7 @@ img.headhshot-small-screen {
 .design-work-item img {
     height: 100%;
     border-radius: 8px;
+    max-width: 90vw;
 }
 .text-overlay {
     background-color: var(--color-000);
