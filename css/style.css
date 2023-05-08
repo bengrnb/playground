@@ -813,6 +813,22 @@ img.headhshot-small-screen {
     object-fit: contain;
     max-height: 450px;
 }
+
+/* Gifty Start */
+.gift-screens {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    column-gap: 2rem;
+}
+.gift-screens img {
+    max-height: 400px;
+    width: fit-content;
+    border-radius: 0px;
+    padding-bottom: .5rem;
+}
+/* Gift End */
+
 /* Articles End */
 
 
